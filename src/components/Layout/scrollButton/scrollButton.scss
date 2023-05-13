@@ -1,0 +1,12 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  .arrow-up {
+    color: #fff; // Màu trắng
+    background-color: #5488c7; // Không có nền
+    font-size: 50px; // Kích thước phù hợp
+    padding: 5px;
+    cursor: pointer;
+  }
+}

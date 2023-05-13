@@ -1,0 +1,54 @@
+.contain-item {
+    gap: 10px;
+
+    .card {
+        flex-shrink: unset;
+        padding: 0.2rem 0.7rem;
+        max-width: 250px;
+
+        .card-title {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            position: relative;
+            height: 3rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            text-align: unset;
+        }
+        .link-user{
+            color: #f05123;
+        }
+        .card-view{
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
+
+.carousel.slide {
+    .carousel-indicators {
+        bottom: -50px;
+        text-align: center;
+        transition: opacity .3s;
+        transform: translateZ(0);
+        z-index: 10;
+
+        button.active {
+            background-color: #f05123;
+            opacity: 1;
+        }
+
+        [data-bs-target] {
+            border: none;
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #000;
+            opacity: .2;
+            // margin: 0 4px;
+        }
+    }
+}

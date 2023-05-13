@@ -1,0 +1,117 @@
+// footer.scss
+
+// Variables
+$footer-bg: #343a40;
+$footer-text-color: #fff;
+$primary-color: #007bff;
+
+// Mixins
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Styles
+footer {
+  background-color: $footer-bg;
+  color: $footer-text-color;
+  padding: 5px 0;
+
+  .footer-container {
+    width: 100%;
+    padding: 0;
+    gap: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+      .item-footer {
+        flex: 0.33;
+        
+        p {
+          text-align: justify;
+          width: 500px;
+        }
+        
+      }
+    }
+
+    .bot-footer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+
+
+
+  h5 {
+    color: $primary-color;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  .social-icons {
+    font-size: 1.5rem;
+
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      a {
+        color: $footer-text-color;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .contact-info {
+    li {
+      font-size: 0.9rem;
+    }
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 767.98px) {
+    .row {
+      flex-direction: column;
+
+      .col-md-3 {
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .social-icons {
+      margin-top: 1.5rem;
+    }
+  }
+}

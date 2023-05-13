@@ -1,0 +1,23 @@
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    .btn-see-more {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fa8f5e;
+        margin: 20px 45%;
+        color: white;
+        font-size: 1.4rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-see-more:hover {
+        background-color: #f05123;
+    }
+}
