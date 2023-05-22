@@ -21,7 +21,8 @@ function App() {
   const { user } = useContext(Context);
   const HomePage = homeRouter.component
   const AdminPage = adminRouter.component
-  const isAdmin = user?.isAdmin || false;
+  const isAdmin = user && user.isAdmin ? user.isAdmin : false;
+
   return (
     <>
       <Router>

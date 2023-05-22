@@ -33,7 +33,7 @@ export default function Home() {
   const decodedSearch = decodeURIComponent(q);
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get(SERVER_URL + "/posts" + search);
+      const res = await axios.get(SERVER_URL + "/posts/" + search);
       setPosts(res.data);
     };
     const fetchPostsHot = async () => {
@@ -206,7 +206,7 @@ export default function Home() {
         <div className="carousel-home">
           <Carousel  >
             {postshot.slice(0, 4).map(post => (
-
+              
               <Carousel.Item key={post.id} interval={4000}>
                 <Link to={`/post/${post.id}`} className="link">
                   <div className="body-opacity">
